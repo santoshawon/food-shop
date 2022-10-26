@@ -276,3 +276,25 @@ header.hero .container{
     margin-right: 0.60rem;
     margin-bottom: 00.60rem;
 }
+
+section.top-products .food-slider .food-card .price{
+   color: var(--primary);
+}
+
+section.top-products .food-slider .food-card button{
+    color: var(--secondary);
+    background: var(--heaven);
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+    padding: 10px 0;
+    
+}
+
+section.top-products .food-slider .food-card button span {
+    background-color: #fff;
+    padding: 10px 15px;
+}
+
+section.top-products .food-slider .food-card button img {
+    padding: 0 10px;
+}
