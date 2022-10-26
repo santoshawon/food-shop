@@ -144,6 +144,26 @@ nav .top .contact h6, nav .top .time h6{
     z-index:-1;
  }
 
+ .magic-shadow-sm{
+   position: relative;
+   background: var(--heaven);
+}
+
+.magic-shadow-sm:after{
+   content: "";
+   display: block;
+   width: 100%;
+   height: 69px;
+   background-image:url(../icons/shadow-sm.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   position: absolute;
+   bottom: -20px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index:-1;
+}
+
  header.hero{
     height: 600px;
     background-image: url(../images/hero.png);
@@ -222,14 +242,14 @@ header.hero .container{
     padding: 4rem 0;
  }
 
- section.top-product{
+ section.top-products{
     background: var(--light);
  }
 
  .section-heading{
    text-align: center;
    position: relative;
-   margin-bottom: 4rem; 
+   margin-bottom: 6rem; 
  }
 
  .section-heading::after{
@@ -245,20 +265,20 @@ header.hero .container{
  }
 
  section.top-products .food-slider .food-card{
-    background: var(--heaven);
+    background: var(--pure);
     padding: 1.5rem 0;
     border-radius: 4px;
  }
 
  section.top-products .food-slider .food-card .product-image img{
-    width:80%;
+    width: 100%;
     height: 200px;
     object-fit: contain;
     padding-bottom: 1rem;
  }
 
  hr{
-    border: 1px solid var(--light);
+    border: 1px solid var(--primary);
     opacity: 0.8;
     margin: 1rem;
  }
@@ -275,6 +295,7 @@ header.hero .container{
  section.top-products .food-slider .food-card .stars img{
     margin-right: 0.60rem;
     margin-bottom: 00.60rem;
+    padding-right: 0.45rem;
 }
 
 section.top-products .food-slider .food-card .price{
@@ -282,19 +303,133 @@ section.top-products .food-slider .food-card .price{
 }
 
 section.top-products .food-slider .food-card button{
-    color: var(--secondary);
-    background: var(--heaven);
+    
     border: 2px solid var(--primary);
     background-color: var(--primary);
-    padding: 10px 0;
-    
+    padding: 1px 1px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s ease;
 }
 
 section.top-products .food-slider .food-card button span {
     background-color: #fff;
-    padding: 10px 15px;
+    padding: 5px 10px;
 }
 
 section.top-products .food-slider .food-card button img {
-    padding: 0 10px;
+    padding: 2px 5px;
+}
+
+section.top-products .food-slider .food-card button span:hover{
+   background: #eebf00;
+   color: #ffffff;
+}
+div.flex{
+   margin-top: 10px;
+   margin-left: 20px;
+}
+
+.slick-slide{
+   margin: 0 27px;
+}
+
+.slick-list{
+   margin: 0 -27px;
+}
+
+.top-products .slider-btn{
+   width: 30px;
+   height: 30px;
+   border: none;
+   background: var(--primary);
+   border-radius: 4px;
+   cursor: pointer;
+   outline: none;
+}
+
+.prev-btn{
+   position: absolute;
+   top: 46%;
+   left: -5%;
+   z-index: 1;
+}
+
+.next-btn{
+   position: absolute;
+   top: 46%;
+   right: -10%;
+   z-index: 1;
+}
+
+.top-products .slider{
+   position: relative;
+}
+
+.top-products .btn-wrapper{
+   margin-top: 2rem;
+}
+
+.slick-track{
+   padding: 1rem 0;
+}
+
+section.about-meal img{
+   width: 80%;
+}
+
+.flex-1{
+   flex: 1;
+}
+
+section.about-meal h2{
+   font-family: "Releway-bold";
+   font-size: 1.4rem;
+   color: #232b38;
+   margin-bottom: 2rem;
+   line-height: 1.3;
+}
+
+section.about-meal p{
+   line-height: 1.7;
+   margin-bottom: 4rem;
+}
+
+section.our-services{
+   background: var(--light);
+   position: relative;
+   z-index: 0;
+}
+
+section.our-services .service-card{
+   background: var(--heaven);
+   text-align: center;
+   padding: 2rem;
+   padding-top: 4rem;
+   margin-right: 2rem;
+   margin-top: 2rem;
+   position: relative;
+   border-radius: 4px;
+}
+
+section.our-services .service-card .icon{
+   position: absolute;
+   top: -45px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+section.our-services .service-card h2{
+   margin-bottom: 1rem;
+}
+
+section.our-services .service-card p{
+   line-height: 1.6;
+   margin-bottom: 1rem;
+
+}
+
+.text-primary{
+   color: var(--primary);
 }
